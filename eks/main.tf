@@ -47,6 +47,7 @@ module "eks" {
   version = "20.26.1"
 
   cluster_endpoint_public_access = true
+  enable_cluster_creator_admin_permissions = true
 
   cluster_name    = "my-eks-cluster"
   cluster_version = "1.24"
